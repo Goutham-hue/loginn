@@ -1,0 +1,100 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 200%; /* Double the width to accommodate both login and signup */
+  height: 100vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.login-section,
+.signup-section,
+.welcome-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  background-image: url('/l.avif'); /* Add your login background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-section {
+  background-image: url('/s.avif'); /* Add your signup background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-section {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.form-container button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container p {
+  margin-top: 10px;
+}
+
+.form-container a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Slide effect */
+.slide-left {
+  transform: translateX(-50%);
+}
